@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ArtworkContext>(opt =>
-    opt.UseSqlServer("ArtworkList"));
+    opt.UseInMemoryDatabase("ArtworkList"));
 
 var app = builder.Build();
 
