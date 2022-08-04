@@ -10,5 +10,7 @@ namespace Art_Gallery_API.Data
         }
 
         public DbSet<Artwork> Artworks { get; set; }
+        public DbSet<Medium> Mediums { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
     }
 }

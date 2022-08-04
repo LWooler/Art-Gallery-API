@@ -6,8 +6,8 @@
         public string Path { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public ICollection<string> Medium { get; set; }
-        public ICollection<string> Subject { get; set; }
+        public virtual ICollection<Mediums> Mediums { get; set; }
+        public virtual ICollection<string> Subject { get; set; }
         public string Size { get; set; }
     }
 }
