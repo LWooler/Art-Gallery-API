@@ -40,7 +40,7 @@ namespace Art_Gallery_API.Controllers
           {
               return NotFound();
           }
-            var artwork = await _context.Artworks.Include(x => x.Mediums).Include(x => x.Subjects).FirstOrDefaultAsync(id);
+            var artwork = await _context.Artworks.Include(x => x.Mediums).Include(x => x.Subjects).FirstOrDefaultAsync(i => i.Id == id);
 
             if (artwork == null)
             {
